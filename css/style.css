@@ -4,22 +4,34 @@
     box-sizing: border-box;
 }
 
-.mid-column {
+/* centra tutta la colonna */
+.colonna {
     width: 900px;
     max-width: 1000px;
     margin: auto;
 }
-header {
-    background-color: lightblue;
-}
-.flex-center {
+
+/* centra gli items */
+.centra {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* header  */
+header {
+    background-color: lightblue;
+}
 nav > div {
     background-color: orange;
-    border: 2px dashed black ;
+    border: 1px dashed;
     width: 25%;
     padding: 5px;
     margin: 16px 0 16px 0;
@@ -31,81 +43,66 @@ nav > div {
 #login {
     text-align: right;
 }
-.row {
-    padding: 16px 0 16px 0;
-}
-.blu {
-    background-color: #0f0f8a;
-    margin-bottom: 2px;
-}
-.rettangolo-rosa {
+
+/* righe  */
+.row {padding: 18px 0 18px 0;}
+.reverse{flex-direction: row-reverse;}
+.blu {background-color: #0f0f8a;}
+.white {background-color: white;}
+.grey {background-color: #d3d3d3;}
+
+/* elementi */
+.item {
+    border: 1px dashed black ;
     height: 250px;
+}
+.rosa-rect {
     width: 600px; 
     background-color: #e687ed;
-    border: 2px dashed black ;
 }
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-.white {
-    background-color: white;
-}
-.grey {
-    background-color: #d3d3d3;}
-
-.pi-rect{
-    height: 250px;
+.car-rect{
     background-color: #f9c1cb;
     width: calc(100%/3);
-    border: 2px dashed black ;
 }
-.bl-rect{
-    height: 250px;
+.blu-rect{
     background-color: #4492fd;
     width: calc((100%/3)*2);
-    border: 2px dashed black ;
-}
-.reverse{
-    flex-direction: row-reverse;
 }
 .gr-rect {
     height: 500px;
     background-color: green;
     width: 100%;
-    border: 2px dashed black ;
 }
-footer {
-    background-color: #24272a;
+
+/* footer */
+footer {background-color: #24272a;
 }
-footer > div > div{
-    border: 2px dashed black ;
+footer .row .colonna{
+    border: 1px dashed;
 }
 .small-rect {
     background-color: #47b1a9;
     width: calc(70%/4);
     height: 350px;
-    border: 2px dashed white ;
+    border: 1px dashed white ;
 }
 .double-small-rect {
     background-color: #e68282;
     width: 30%;
     height:350px ;
-    border: 2px dashed black ;
-}
-br {background-color: #d3d3d3;
 }
 
-.bottom {
+/* barra finale */
+.bottoni {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #94fdd4;
     margin-top: 16px;
 }
-.bottom > div {
+.bottoni > div {
     background-color: #f8b9c6;
-    border: 2px dashed black ;
+    border: 1px dashed;
     margin: 10px 0 10px 0;
+    padding: 5px;
 }
