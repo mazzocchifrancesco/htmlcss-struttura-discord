@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;;
+}
+header {
+    background-color: lightblue;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+nav > div {
+    background-color: orange;
+    border: 2px dashed black ;
+    width: 25%;
+}
+#link {
+    width: 50%;
+    text-align: center;
+}
+#login {
+    text-align: right;
+}
+.blu {
+    background-color: rgb(22, 22, 136);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+.rettangolo-rosa {
+    height: 250px;
+    width: 600px; 
+    background-color: rgb(239, 99, 236);
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
