@@ -9,11 +9,9 @@
     max-width: 1000px;
     margin: auto;
 }
-
 header {
     background-color: lightblue;
 }
-
 .flex-center {
     display: flex;
     justify-content: center;
@@ -24,7 +22,6 @@ nav > div {
     border: 2px dashed black ;
     width: 25%;
     margin: 16px 0 16px 0;
-
 }
 #link {
     width: 50%;
@@ -34,8 +31,7 @@ nav > div {
     text-align: right;
 }
 .row {
-    height: 300px;
-
+    padding: 16px 0 16px 0;
 }
 .blu {
     background-color: rgb(22, 22, 136);
@@ -55,8 +51,8 @@ nav > div {
     background-color: white;
 }
 .grey {
-    background-color: grey;
-}
+    background-color: grey;}
+
 .pi-rect{
     height: 250px;
     background-color: pink;
@@ -71,4 +67,10 @@ nav > div {
 }
 .reverse{
     flex-direction: row-reverse;
+}
+.gr-rect {
+    height: 500px;
+    background-color: green;
+    width: 100%;
+    border: 2px dashed black ;
 }
