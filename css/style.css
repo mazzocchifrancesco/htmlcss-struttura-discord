@@ -4,23 +4,27 @@
     box-sizing: border-box;
 }
 
-.container {
+.mid-column {
     width: 900px;
     max-width: 1000px;
-    margin: 0 auto 0 auto;;
+    margin: auto;
 }
+
 header {
     background-color: lightblue;
 }
-nav {
+
+.flex-center {
     display: flex;
     justify-content: center;
-    padding: 16px;
+    align-items: center;
 }
 nav > div {
     background-color: orange;
     border: 2px dashed black ;
     width: 25%;
+    margin: 16px 0 16px 0;
+
 }
 #link {
     width: 50%;
@@ -29,12 +33,12 @@ nav > div {
 #login {
     text-align: right;
 }
+.row {
+    height: 300px;
+
+}
 .blu {
     background-color: rgb(22, 22, 136);
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 2px;
 }
 .rettangolo-rosa {
@@ -47,3 +51,24 @@ nav > div {
     clear: both;
     display: table;
   }
+.white {
+    background-color: white;
+}
+.grey {
+    background-color: grey;
+}
+.pi-rect{
+    height: 250px;
+    background-color: pink;
+    width: calc(100%/3);
+    border: 2px dashed black ;
+}
+.bl-rect{
+    height: 250px;
+    background-color: rgb(38, 124, 200);
+    width: calc((100%/3)*2);
+    border: 2px dashed black ;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
